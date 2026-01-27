@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.label {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.item-tennis { grid-area: tennis; }
+.item-hiking { grid-area: hiking; }
+.item-running { grid-area: running; }
+.item-cycling { grid-area: cycling; }
+.item-yoga { grid-area: yoga; }
+.item-swimming { grid-area: swimming; }
+
+@media (min-width: 1025px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+            "tennis hiking running cycling"
+            "tennis hiking yoga swimming";
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px 250px;
+        grid-template-areas:
+            "tennis hiking running"
+            "tennis yoga swimming";
+    }
+    .item-cycling {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 610px) {
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 200px;
+        grid-template-areas:
+            "tennis hiking"
+            "running cycling"
+            "yoga swimming";
+    }
+}
+
+@media (max-width: 609px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        grid-template-areas:
+            "tennis"
+            "hiking"
+            "running"
+            "cycling"
+            "yoga"
+            "swimming";
+    }
+}
