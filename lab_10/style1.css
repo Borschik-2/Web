@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 800px;
+    height: 450px;
+    background-color: #99C3CC;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-left: 20px solid #fff;
+    position: relative;
+}
+
+.form-container {
+    width: 66%;
+    padding-right: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-title {
+    background-color: #E8702A;
+    color: white;
+    padding: 20px 40px 20px 60px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: calc(100% + 50px);
+    margin-top: 40px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    color: #5F7D86;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    outline: none;
+    color: #4a636a;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: #8dafb6;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-date {
+    width: 60%;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 15px;
+}
+
+.date-inputs input {
+    width: 45%;
+}
+
+.col-cvv {
+    width: 30%;
+}
+
+.image-container {
+    width: 34%;
+    height: 100%;
+    background-image: url('icons/moon_flag.png'); 
+    background-size: 130%; 
+    background-repeat: no-repeat;
+    background-position: bottom -30px right -60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        border-left: 10px solid #fff;
+    }
+
+    .form-title {
+        margin-left: -10px;
+        padding-left: 50px;
+        width: calc(100% + 10px);
+    }
+
+    .form-container {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .image-container {
+        display: none;
+    }
+    
+    input {
+        width: 100%;
+    }
+}

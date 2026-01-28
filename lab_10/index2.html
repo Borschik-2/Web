@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Modal</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="modal-window">
+            
+            <div class="modal-header">
+                <h3 class="modal-title">Memory Card Options</h3>
+                <span class="close-btn">&times;</span>
+            </div>
+
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="model">Виробник / Модель:</label>
+                        <input type="text" id="model" class="modal-input" placeholder="Kingston Canvas Select Plus">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Тип:</label>
+                        <input type="text" id="type" class="modal-input" placeholder="microSDXC">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="capacity">Об'єм пам'яті (ГБ):</label>
+                        <input type="number" id="capacity" class="modal-input" placeholder="64">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="speed-class">Speed Class:</label>
+                        <select id="speed-class" class="modal-select">
+                            <option value="c10">Class 10</option>
+                            <option value="u1">UHS-I U1</option>
+                            <option value="u3">UHS-I U3</option>
+                            <option value="v30">V30</option>
+                            <option value="v60">V60</option>
+                            <option value="v90">V90</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="read-speed">Читання (МБ/с):</label>
+                            <input type="number" id="read-speed" class="modal-input" placeholder="100">
+                        </div>
+                        <div class="form-group half-width">
+                            <label for="write-speed">Запис (МБ/с):</label>
+                            <input type="number" id="write-speed" class="modal-input" placeholder="85">
+                        </div>
+                    </div>
+
+                    <div class="image-section">
+                        <div class="image-preview">
+                            <img src="img/sd_placeholder.png" alt="Card Preview">
+                        </div>
+                        <label for="file-upload" class="file-label">Select image file:</label>
+                        <input type="file" id="file-upload" class="file-input">
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="confirm-btn">Confirm</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
