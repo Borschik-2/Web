@@ -1,0 +1,40 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 80vh;
+    @include flex-center;
+    text-align: center;
+    padding: rem(50) 0;
+
+    &__content {
+        animation: fadeIn 1.5s ease-out;
+    }
+
+    &__title {
+        color: $secondary-color;
+        margin-bottom: rem(20);
+        @include fluid-text(2rem, 3.5rem);
+    }
+
+    &__subtitle {
+        font-size: rem(18);
+        margin-bottom: rem(30);
+        color: darken($text-color, 10%);
+    }
+
+    .btn--primary {
+        @extend %btn-base; 
+        background-color: $primary-color;
+        color: $white;
+        border: 2px solid $primary-color;
+
+        &:hover {
+            background-color: transparent;
+            color: $primary-color;
+        }
+    }
+}

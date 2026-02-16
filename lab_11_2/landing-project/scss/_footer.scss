@@ -1,0 +1,21 @@
+.footer {
+    background-color: $secondary-color;
+    color: $white;
+    padding: rem(30) 0;
+    text-align: center;
+
+    &__socials {
+        margin-top: rem(15);
+        
+        a {
+            color: $white;
+            margin: 0 10px;
+            font-size: rem(20);
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

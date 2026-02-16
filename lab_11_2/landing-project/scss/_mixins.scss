@@ -1,0 +1,21 @@
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fluid-text($min-size, $max-size) {
+  font-size: $min-size;
+  @media (min-width: $tablet) {
+    font-size: calc(#{$min-size} + (1vw));
+  }
+  @media (min-width: $desktop) {
+    font-size: $max-size;
+  }
+}

@@ -1,0 +1,41 @@
+.services {
+    padding: rem(60) 0;
+    background-color: $white;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @include responsive($desktop) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include responsive($mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.card {
+    background: $bg-light;
+    padding: rem(40);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    &__icon {
+        font-size: rem(40);
+        color: $secondary-color;
+        margin-bottom: rem(20);
+    }
+
+    &__title {
+        margin-bottom: rem(15);
+        color: $secondary-color;
+    }
+}

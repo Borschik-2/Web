@@ -1,0 +1,43 @@
+.header {
+    background-color: $primary-color;
+    padding: rem(20) 0;
+    color: $white;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include responsive($tablet) {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    &__logo {
+        font-size: rem(24);
+        font-weight: bold;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+
+        li a {
+            color: $white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: underline;
+            }
+        }
+    }
+}
