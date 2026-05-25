@@ -1,0 +1,138 @@
+/* Базові стилі сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Налаштування сітки (grid). 
+   auto-fill та minmax гарантують перестроювання карток при зміні ширини екрану */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стилі самої картки */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Легкий ефект підняття при наведенні */
+}
+
+/* Обгортка для зображення */
+.card-image-wrapper {
+    position: relative;
+    height: 180px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Зображення заповнює блок без спотворень */
+}
+
+/* Бейдж знижки (зверху зліва) */
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Бренд (знизу зліва на фото) */
+.brand-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+
+/* Категорія (знизу справа на фото) */
+.category-name {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+/* Тіло картки (текст) */
+.card-body {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Змушує футер притискатись до низу */
+}
+
+.card-title {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.card-desc {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* Футер картки (ціна і корзина) */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.price {
+    color: #dc3545;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Іконка корзини */
+.cart-icon {
+    color: #007bff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.cart-icon:hover {
+    color: #0056b3;
+}
