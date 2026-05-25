@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №15</title>
+    <!-- Підключаємо файл зі стилями -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Контейнер для Завдання 5 (Таймер) -->
+    <div class="countdown-wrapper">
+        <h2>До Нового року залишилося:</h2>
+        <div class="countdown-container">
+            <!-- Блок для днів -->
+            <div class="time-block">
+                <div class="time-value" id="days">00</div>
+                <div class="time-label">days</div>
+            </div>
+            <!-- Блок для годин -->
+            <div class="time-block">
+                <div class="time-value" id="hours">00</div>
+                <div class="time-label">hours</div>
+            </div>
+            <!-- Блок для хвилин -->
+            <div class="time-block">
+                <div class="time-value" id="minutes">00</div>
+                <div class="time-label">minutes</div>
+            </div>
+            <!-- Блок для секунд -->
+            <div class="time-block">
+                <div class="time-value" id="seconds">00</div>
+                <div class="time-label">seconds</div>
+            </div>
+        </div>
+        <p><em>* Відкрийте консоль розробника (F12), щоб побачити результати Завдань 1-4.</em></p>
+    </div>
+
+    <!-- Підключаємо скрипти (спочатку логічні завдання, потім таймер) -->
+    <script src="tasks1_4.js"></script>
+    <script src="task5.js"></script>
+</body>
+</html>

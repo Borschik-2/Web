@@ -1,0 +1,49 @@
+/* Базові налаштування шрифту та сторінки */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.countdown-wrapper {
+    text-align: center;
+}
+
+/* Контейнер, що тримає всі блоки таймера в один ряд */
+.countdown-container {
+    display: flex;
+    gap: 15px; /* Відстань між блоками */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Стилі для кожного окремого блоку (дні, години і т.д.) */
+.time-block {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Верхня частина з цифрами (синій фон) */
+.time-value {
+    background-color: #4da6ff; /* Колір як на скріншоті */
+    color: white;
+    font-size: 36px;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Нижня частина з текстом (сірий фон) */
+.time-label {
+    background-color: #e6e6e6;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+}
