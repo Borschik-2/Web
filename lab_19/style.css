@@ -1,0 +1,168 @@
+/* Базові налаштування для всієї сторінки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* --- Стилі для Header (Завдання 1) --- */
+.header {
+    background-color: #7d7d7d; /* Сірий колір як на скріншоті */
+    padding: 10px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.create-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.create-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Стилі для Модального вікна (Завдання 2) --- */
+/* Оверлей (темний прозорий фон) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden; /* Приховано за замовчуванням */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+/* Клас для відображення модального вікна */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-window {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden; /* Щоб синя шапка не виходила за закруглені кути */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Шапка модального вікна */
+.modal-header {
+    background-color: #5c9ce6; /* Блакитний колір зі скріншоту */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.close-btn {
+    background-color: white;
+    color: #555;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn:hover {
+    background-color: #eee;
+}
+
+/* Стилі форми */
+.modal-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: #5c9ce6;
+}
+
+/* Кнопка збереження */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save-btn:hover {
+    background-color: #e8e8e8;
+}
