@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Контейнер для вирівнювання кнопок в рядок */
+.button-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* Базові стилі, які будуть застосовуватись до всіх згенерованих кнопок */
+.custom-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Плавна анімація для тіні */
+}
