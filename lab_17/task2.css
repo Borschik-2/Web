@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative; /* Щоб меню можна було позиціонувати відносно шапки */
+}
+
+/* Стилі для меню при ширині > 400px (горизонтальне) */
+.nav-menu {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.nav-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Бургер-кнопка прихована на великих екранах */
+.burger-btn {
+    display: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.content {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Медіа-запит: якщо екран менше або дорівнює 400px */
+@media (max-width: 400px) {
+    .nav-menu {
+        display: none; /* Ховаємо горизонтальне меню */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Відображаємо одразу під шапкою */
+        left: 10px;
+        width: 200px;
+        background-color: #f4f4f4;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        z-index: 10; /* Відмальовуємо ПОВЕРХ тексту */
+        padding: 0;
+    }
+
+    /* Клас, який буде додаватися через JavaScript для відкриття меню */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Показуємо бургер-кнопку */
+    .burger-btn {
+        display: block;
+    }
+}
