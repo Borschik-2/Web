@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">eShop</h1>
+            <button id="open-modal-btn" class="create-btn">create Product</button>
+        </div>
+    </header>
+
+    <!-- Контейнер для карток товарів (Завдання 2) -->
+    <main class="main-content">
+        <div id="products-grid" class="products-grid">
+            <!-- Картки будуть генеруватися тут через JavaScript -->
+        </div>
+    </main>
+
+    <!-- Модальне вікно СТВОРЕННЯ / РЕДАГУВАННЯ продукту -->
+    <div id="product-modal-overlay" class="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h2 id="modal-title">Create product</h2>
+                <button id="close-modal-btn" class="close-btn">×</button>
+            </div>
+
+            <form id="product-form" class="modal-form">
+                <!-- Приховане поле для збереження ID при редагуванні -->
+                <input type="hidden" id="product-id">
+
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="discount">Discount (%):</label>
+                    <input type="number" id="discount" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="in-stock">In stock:</label>
+                    <input type="number" id="in-stock" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brand" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" required>
+                        <option value="smartphones">smartphones</option>
+                        <option value="laptops">laptops</option>
+                        <option value="fragrances">fragrances</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="picture-link">Link to picture:</label>
+                    <input type="url" id="picture-link" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Завдання 4*: Власне модальне вікно конфірмації (замість confirm) -->
+    <div id="confirm-modal-overlay" class="modal-overlay">
+        <div class="confirm-window">
+            <h3>Повідомлення</h3>
+            <p id="confirm-message">Do you really want to remove this element?</p>
+            <div class="confirm-actions">
+                <button id="confirm-ok-btn" class="btn-ok">OK</button>
+                <button id="confirm-cancel-btn" class="btn-cancel">Скасувати</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

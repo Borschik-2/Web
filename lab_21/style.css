@@ -1,0 +1,91 @@
+/* Базові налаштування */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+/* Шапка */
+.header { background-color: #7d7d7d; padding: 10px 0; }
+.header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.logo { color: white; font-size: 20px; font-weight: bold; }
+.create-btn { background-color: transparent; color: white; border: 1px solid white; padding: 6px 15px; border-radius: 4px; cursor: pointer; }
+.create-btn:hover { background-color: rgba(255, 255, 255, 0.1); }
+
+/* Сітка товарів */
+.main-content { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+
+/* Картка товару (стилізація під скріншот) */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.discount-badge {
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #e53935;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom-right-radius: 8px;
+    z-index: 2;
+}
+.product-img-container {
+    width: 100%; height: 200px;
+    background-color: #000;
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+.product-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.category-badge {
+    position: absolute;
+    bottom: -10px; right: 10px;
+    background-color: rgba(100, 100, 100, 0.8);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.product-info { padding: 20px 15px 15px; text-align: center; flex-grow: 1; display: flex; flex-direction: column;}
+.product-title { font-size: 16px; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
+.product-desc { font-size: 12px; color: #666; margin-bottom: 15px; flex-grow: 1; }
+.product-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 10px; }
+.product-price { color: #e53935; font-size: 18px; font-weight: bold; }
+.action-buttons { display: flex; gap: 10px; }
+.icon-btn { background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; }
+.icon-btn svg { width: 100%; height: 100%; }
+.edit-btn { color: #4CAF50; }
+.delete-btn { color: #e53935; }
+
+/* Модальні вікна (загальне) */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; justify-content: center; align-items: center;
+    opacity: 0; visibility: hidden; transition: 0.2s; z-index: 1000;
+}
+.modal-overlay.active { opacity: 1; visibility: visible; }
+
+/* Вікно форми */
+.modal-window { background: white; width: 400px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.modal-header { background: #5c9ce6; color: white; padding: 15px 20px; display: flex; justify-content: space-between; }
+.modal-header h2 { font-size: 18px; font-weight: normal; }
+.close-btn { background: white; color: #555; border: none; width: 20px; height: 20px; border-radius: 3px; cursor: pointer; font-weight: bold; }
+.modal-form { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.form-group { display: flex; flex-direction: column; }
+.form-group label { font-size: 12px; color: #555; margin-bottom: 4px; }
+.form-group input, .form-group textarea, .form-group select { padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; font-size: 14px; }
+.form-actions { display: flex; justify-content: center; margin-top: 10px; }
+.save-btn { background: #f8f8f8; border: 1px solid #ccc; padding: 8px 30px; border-radius: 4px; cursor: pointer; }
+
+/* Вікно конфірмації (Завдання 4*) */
+.confirm-window { background: white; width: 350px; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+.confirm-window h3 { margin-bottom: 10px; color: #333; }
+.confirm-window p { font-size: 14px; color: #555; margin-bottom: 20px; }
+.confirm-actions { display: flex; justify-content: center; gap: 15px; }
+.btn-ok { background: #00796b; color: white; border: none; padding: 8px 25px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+.btn-cancel { background: white; color: #00796b; border: 1px solid #00796b; padding: 8px 20px; border-radius: 20px; cursor: pointer; }
