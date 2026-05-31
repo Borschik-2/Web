@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №24 - jQuery</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ПІДКЛЮЧЕННЯ БІБЛІОТЕКИ jQuery через CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1>Лабораторна робота №24</h1>
+
+    <!-- ================= ЗАВДАННЯ 1 ================= -->
+    <section class="task-section">
+        <h2>Завдання 1 (Посилання)</h2>
+        <a href="https://google.com">Google (починається з https://)</a><br>
+        <a href="http://example.com">Example (починається з http://)</a><br>
+        <a href="https://github.com">GitHub (починається з https://)</a>
+    </section>
+
+    <!-- ================= ЗАВДАННЯ 2 ================= -->
+    <section class="task-section">
+        <h2>Завдання 2 (Пошук та стилізація)</h2>
+        <!-- Код з методички -->
+        <h2 class="head">header1</h2>
+        <h2 class="head">header2 <span class="inner">inner elem1</span></h2>
+        <h2>header3</h2>
+        <h2 class="head">header4<span>inner elem2</span></h2> <!-- Тут span без класу inner -->
+        <h2>header5</h2>
+    </section>
+
+    <!-- ================= ЗАВДАННЯ 3 ================= -->
+    <section class="task-section">
+        <h2>Завдання 3 (Переміщення елементів)</h2>
+        <!-- Код з методички -->
+        <div id="task3-container">
+            <h3>header1</h3>
+            <div>text1</div>
+            <h3>header2</h3>
+            <div>text2</div>
+        </div>
+    </section>
+
+    <!-- ================= ЗАВДАННЯ 4 ================= -->
+    <section class="task-section">
+        <h2>Завдання 4 (Чекбокси)</h2>
+        <label><input type="checkbox" class="task4-checkbox"> Опція 1</label>
+        <label><input type="checkbox" class="task4-checkbox"> Опція 2</label>
+        <label><input type="checkbox" class="task4-checkbox"> Опція 3</label>
+        <label><input type="checkbox" class="task4-checkbox"> Опція 4</label>
+        <label><input type="checkbox" class="task4-checkbox"> Опція 5</label>
+        <label><input type="checkbox" class="task4-checkbox"> Опція 6</label>
+    </section>
+
+    <!-- ================= ЗАВДАННЯ 5 ================= -->
+    <section class="task-section">
+        <h2>Завдання 5 (Рендеринг карток через jQuery)</h2>
+        <!-- Контейнер для карток товарів -->
+        <div id="products-grid" class="products-grid">
+            <!-- Картки згенеруються тут скриптом task5.js -->
+        </div>
+    </section>
+
+    <!-- Підключення наших скриптів -->
+    <script src="tasks1-4.js"></script>
+    <script src="task5.js"></script>
+</body>
+</html>
