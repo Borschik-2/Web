@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №23</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">eShop</h1>
+            <button class="create-btn">create Product</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Блок фільтрації та кнопки Start -->
+        <div class="controls-wrapper">
+            <div class="filter-container">
+                <!-- Вибір категорії (опції генеруватимуться динамічно через JS) -->
+                <select id="category-filter">
+                    <option value="">-- All categories --</option>
+                </select>
+
+                <!-- Поле пошуку -->
+                <input type="text" id="search-input" placeholder="-- search product --">
+
+                <!-- Вибір сортування -->
+                <select id="sort-select">
+                    <option value="">-- sort products (Don't sort) --</option>
+                    <option value="price-asc">by increasing price</option>
+                    <option value="price-desc">by decreasing price</option>
+                </select>
+            </div>
+
+            <!-- Контейнер для кнопки Start (Завдання 1) -->
+            <div id="start-btn-container" class="start-btn-container">
+                <button id="start-btn" class="start-btn">Start</button>
+            </div>
+        </div>
+
+        <!-- Контейнер для карток товарів -->
+        <div id="products-grid" class="products-grid">
+            <!-- Картки будуть генеруватися тут через JavaScript -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
