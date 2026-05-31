@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">eShop</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Завдання 1: Форма для фільтрації, пошуку та сортування -->
+        <div class="filter-container">
+            <!-- Вибір категорії -->
+            <select id="category-filter">
+                <option value="">-- All categories --</option>
+                <option value="smartphones">smartphones</option>
+                <option value="laptops">laptops</option>
+                <option value="fragrances">fragrances</option>
+                <option value="skincare">skincare</option>
+                <option value="groceries">groceries</option>
+                <option value="home-decoration">home-decoration</option>
+            </select>
+
+            <!-- Поле пошуку -->
+            <input type="text" id="search-input" placeholder="-- search product --">
+
+            <!-- Вибір сортування -->
+            <select id="sort-select">
+                <option value="">-- sort products (Don't sort) --</option>
+                <option value="price-asc">by increasing price</option>
+                <option value="price-desc">by decreasing price</option>
+                <option value="newest">newest first</option>
+                <option value="oldest">oldest first</option>
+            </select>
+        </div>
+
+        <!-- Контейнер для карток товарів -->
+        <div id="products-grid" class="products-grid">
+            <!-- Картки будуть генеруватися тут через JavaScript -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
