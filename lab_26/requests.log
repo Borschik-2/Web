@@ -1,0 +1,9 @@
+[2026-06-01T11:39:26.169Z] Метод: GET | URL: /index.html
+[2026-06-01T11:39:26.255Z] Метод: GET | URL: /style.css
+[2026-06-01T11:39:26.256Z] Метод: GET | URL: /client.js
+[2026-06-01T11:39:26.391Z] Метод: GET | URL: /style.css
+[2026-06-01T11:39:37.444Z] Метод: GET | URL: /product/list
+[2026-06-01T11:39:43.018Z] Метод: POST | URL: /product/create
+[2026-06-01T11:39:49.938Z] Метод: PUT | URL: /product/1780313983482
+[2026-06-01T11:39:54.762Z] Метод: DELETE | URL: /product/1780313983482
+[2026-06-01T11:39:57.601Z] Метод: GET | URL: /product/list
