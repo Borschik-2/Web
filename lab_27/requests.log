@@ -1,0 +1,5 @@
+[2026-06-04T07:33:49.266Z] GET /api/auth/register
+[2026-06-04T07:37:20.371Z] POST /api/auth/register
+[2026-06-04T07:38:06.764Z] POST /api/auth/login
+[2026-06-04T07:44:30.922Z] POST /api/products
+[2026-06-04T07:45:42.791Z] GET /api/products
