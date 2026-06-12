@@ -1,0 +1,53 @@
+/* Стилізація контейнера фільмів */
+.movies-container {
+  border: 1px solid #62b5e5; /* Блакитна рамка як на скріншоті */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #ffffff;
+}
+
+.movies-container h3 {
+  margin-top: 0;
+  color: #000;
+}
+
+.movies-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.movie-item {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.movie-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.details-btn {
+  background-color: #2196F3; /* Синій колір кнопки */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #0b7dda;
+}

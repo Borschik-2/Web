@@ -1,0 +1,27 @@
+/* Глобальні стилі для красивого відображення на сторінці */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.app-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-container h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Вирівнюємо компоненти поруч на великих екранах і один під одним на малих */
+.components-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}

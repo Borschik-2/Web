@@ -1,0 +1,48 @@
+/* Стилізація контейнера міні-блогу (орієнтуємось на скріншот) */
+.mini-blog-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.mini-blog-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.mini-blog-container p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+.tags-list {
+  padding-left: 20px;
+  color: #333;
+}
+
+.tags-list li {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.source-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
