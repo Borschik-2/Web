@@ -1,0 +1,122 @@
+.team-page-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.team-header {
+  text-align: center;
+  color: #495057;
+  margin-bottom: 30px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Відступи між командами */
+}
+
+/* Стилі для розділення команд кольором/рамкою */
+.team-section {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fcfcfc;
+}
+
+/* Динамічні кольори для команд */
+.team-blue { border-color: #339af0; }
+.team-blue h3 { color: #339af0; }
+
+.team-purple { border-color: #be4bdb; }
+.team-purple h3 { color: #be4bdb; }
+
+.team-green { border-color: #51cf66; }
+.team-green h3 { color: #51cf66; }
+
+.team-orange { border-color: #ff922b; }
+.team-orange h3 { color: #ff922b; }
+
+.team-info {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ced4da;
+  padding-bottom: 15px;
+}
+
+.team-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.team-info p {
+  margin: 0;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+/* Картка учасника команди */
+.member-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.member-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #495057;
+  flex-shrink: 0;
+}
+
+.member-info h4 {
+  margin: 0 0 5px 0;
+  color: #343a40;
+}
+
+.member-role {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #868e96;
+}
+
+.member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-badge {
+  background-color: #f1f3f5;
+  color: #495057;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.team-footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #495057;
+  font-weight: bold;
+}
