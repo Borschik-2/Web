@@ -1,0 +1,103 @@
+.appContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+.mainTitle {
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* Панель керування */
+.controlsBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 15px;
+}
+
+.filterGroup {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.input, .select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus, .select:focus {
+  border-color: #3b82f6;
+}
+
+.checkboxGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+/* Перемикач Grid/List */
+.viewToggle {
+  display: flex;
+  gap: 5px;
+  background-color: #f3f4f6;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.activeBtn {
+  padding: 6px 12px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #111827;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Панель статистики */
+.statsBar {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: #6b7280;
+  padding-right: 10px;
+}
+
+.statsBar b {
+  color: #111827;
+}

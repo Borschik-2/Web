@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Сітка (Grid View) */
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* Список (List View) */
+.list {
+  grid-template-columns: 1fr;
+}
+
+.noResults {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #6b7280;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}

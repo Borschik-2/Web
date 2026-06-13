@@ -1,0 +1,101 @@
+/* Базові стилі картки */
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+/* Hover-ефект (підняття карточки) */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Умовні рамки */
+.free { border: 2px solid #10b981; }
+.paid { border: 2px solid #e03bf6; }
+
+/* Умовні фонові градієнти */
+.levelBeginner { background: linear-gradient(135deg, #e0f8e9, #bbf7d0); }
+.levelIntermediate { background: linear-gradient(135deg, #fef3c7, #fde047); }
+.levelAdvanced { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
+
+/* Бейджі */
+.badges {
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  animation: bounceIn 0.5s ease;
+}
+
+.badgeFree { background-color: #10b981; }
+.badgeNew { background-color: #f59e0b; }
+
+/* Текстовий контент */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.level, .duration {
+  margin: 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+/* Анімація пульсації для нових курсів */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Анімація появи бейджа */
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Стиль для відображення у вигляді списку (List View) */
+.list {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list .content {
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.list .title { width: 40%; }
+.list .level { width: 20%; }
+.list .duration { width: 20%; }
