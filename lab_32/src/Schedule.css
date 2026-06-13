@@ -1,0 +1,48 @@
+.schedule-card {
+  display: flex;
+  background-color: #ffffff;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-left: 4px solid #ccc; /* Колір за замовчуванням, перезаписується через style */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.schedule-time-block {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  padding: 0 15px;
+  border-right: 1px solid #eee;
+}
+
+.schedule-time {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.schedule-duration {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.schedule-details {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule-subject {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.schedule-classroom,
+.schedule-teacher {
+  margin: 0 0 3px 0;
+  font-size: 13px;
+  color: #6b7280;
+}

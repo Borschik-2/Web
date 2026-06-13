@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e7eb; /* Світло-сірий фон сторінки */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.lab-title {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+/* Розміщуємо завдання поруч на великих екранах і одне під одним на малих */
+.tasks-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.task-section {
+  flex: 1;
+  min-width: 320px;
+}

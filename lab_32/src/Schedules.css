@@ -1,0 +1,31 @@
+.schedules-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.schedules-header h2 {
+  color: #111827;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+
+.schedules-date {
+  color: #6b7280;
+  margin: 0;
+  font-size: 14px;
+}
+
+.schedules-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+.schedules-content {
+  display: flex;
+  flex-direction: column;
+}
