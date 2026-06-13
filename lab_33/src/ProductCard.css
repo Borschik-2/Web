@@ -1,0 +1,68 @@
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #10b981;
+}
+
+.product-category-badge {
+  align-self: flex-start;
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Дозволяє кнопці завжди бути внизу */
+}
+
+.add-to-cart-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #059669;
+}

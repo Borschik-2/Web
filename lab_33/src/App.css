@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.app-title {
+  text-align: center;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+.app-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.app-sidebar {
+  flex: 0 0 350px; /* Фіксована ширина для форми */
+}
+
+.app-content {
+  flex: 1; /* Займає весь доступний простір */
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+  
+  .app-sidebar {
+    flex: 1;
+    width: 100%;
+  }
+}
